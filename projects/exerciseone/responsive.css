@@ -1,0 +1,29 @@
+div {
+	background-color: #872d20;
+	border: 2px solid white;
+}
+
+#bar {
+	height: 90px;
+	width: 608px;
+}
+
+.one {
+	height: 90px;
+	width: 200px;
+	float: left;
+
+}
+
+.two {
+	height: 800px;
+	width: 302px;
+	float: left;
+	clear: left;
+}
+.twoo {
+	height: 800px;
+	width: 302px;
+	float: left;
+	
+}
