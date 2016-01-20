@@ -87,8 +87,9 @@ h2 {color: black; font-family: Vollkorn; font-size: 25px; padding: 30px; }
   #HCB_comment_box #hcb_form_name, 
   #HCB_comment_box #hcb_form_website,
   #HCB_comment_box #hcb_mod, 
+  #HCB_comment_box #author,
   {
     background-color:#c3c3c3;
-
+}
 
 
