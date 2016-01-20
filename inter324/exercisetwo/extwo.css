@@ -2,13 +2,13 @@ body {
 	background-color: #872d20
 }
 p {font-size: 200px;color:#e0ce3b;}
-.dog, .cal {display:none;}
+ .cal {display:none;}
 
 
 /*media querise*/
 @media screen and (max-width: 1024px) {
 	body {
-		background-color: #872d20}	
+		background: url(http://pre03.deviantart.net/bba2/th/pre/i/2012/056/9/8/soc___ares_mission_2_by_dragonzeek1-d4qxqpc.png)}	
 	
 
 
@@ -17,7 +17,8 @@ p {font-size: 200px;color:#e0ce3b;}
 	body {
 		background-color: #7b307f}
 	p {color: #74b677}
-	.max {display:none;}
+	
+	}
 
 
 @media screen and (max-width: 600px) {
@@ -27,7 +28,7 @@ p {font-size: 200px;color:#e0ce3b;}
 
 @media screen and (max-width: 480px) {
 	body {
-		background-color: #74b677}
+		background: url(http://t02.deviantart.net/x3HiwFSQeU_4aLdcDTcQrJV14b0=/300x200/filters:fixed_height%28100,100%29:origin%28%29/pre00/aa62/th/pre/i/2012/229/4/5/rising_water_terror_by_dragonzeek1-d5bgmdw.png)}
 		p {font-size: 100px}
 
 
