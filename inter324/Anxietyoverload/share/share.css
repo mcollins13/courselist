@@ -82,7 +82,11 @@ h2 {color: black; font-family: Vollkorn; font-size: 25px; padding: 30px; }
 	padding: 30px;
 }
 /*testing*/
-
+ #HCB_comment_box #hcb_form_content,
+  #HCB_comment_box #hcb_form_email, 
+  #HCB_comment_box #hcb_form_name, 
+  #HCB_comment_box #hcb_form_website {
+    background-color:#c3c3c3;
 
 
 
