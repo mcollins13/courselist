@@ -29,3 +29,7 @@ p {color:#51002a;font-family: Georgia, Times New Roman;  }
 footer {padding: 20px; font-size:75%; color: #FFFFFF;
 	background-color: #872d20;font-family:Georgia,Times New Roman,Times;
 	font-style: italic}
+.sublink {
+	font-size: 15px;
+	
+}
