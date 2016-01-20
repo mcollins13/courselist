@@ -1,5 +1,38 @@
 body {
 	background-color: #872d20
 }
+p {font-size: 200px;color:#e0ce3b;}
+.dog, .cal {display:none;}
+
 
 /*media querise*/
+@media screen and (max-width: 1024px) {
+	body {
+		background-color: #872d20}	
+	
+
+
+
+@media screen and (max-width: 7800px) {
+	body {
+		background-color: #7b307f}
+	p {color: #74b677}
+	.max {display:none;}
+
+
+@media screen and (max-width: 600px) {
+	body {
+		background-color: #7bffff}
+
+
+@media screen and (max-width: 480px) {
+	body {
+		background-color: #74b677}
+		p {font-size: 100px}
+
+
+
+@media screen and (max-width: 480px) {
+	body {
+		background-color: #e0ce3b}
+}
