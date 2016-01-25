@@ -3,16 +3,16 @@ body {background-color: black;}
 
 .box {
 	background-color: black;
-	width: 250px; 
-	height: 75px;
-	border: 2px solid white;float: left;
+	width: 200px; 
+	height: 50px;
+	border: 1px dashed white;float: left;
 	margin: 20px 5px 30px 50px;
 }
 
 h1{ 
 	left: 35px;
 	
-	font-size: 30px;
+	font-size: 15px;
 	color: white;
 	position: relative;
 }
@@ -26,7 +26,7 @@ a {color:white;}
 
 #line {
 	width: 100%;
-	height: 3px;
+	height: 1px;
 	background-color: white; clear: left;
 	margin-top: 30px}
 
@@ -51,8 +51,10 @@ p {
 
 
 #white {
-	color: black;
+	color: gray;
 	font-size: 20px;
+	font-family: sans-serif;
+	line-height: 150%
 }
 
 
@@ -76,9 +78,9 @@ span {
 }
 .star {text}
 h2 {color: black; font-family: Vollkorn; font-size: 25px; padding: 30px; }
-.textbox {background-color: #c3c3c3; border-radius: 25px; margin-top: -30px; margin-left: 35px; margin-right: 35px}
-.padding {
-	padding: 30px;
+
+.padding { 
+	padding: 20px;
 }
 h3 { font-size: 18px;}
 .boxs {
