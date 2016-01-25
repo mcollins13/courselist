@@ -1,0 +1,139 @@
+body {background-color: black;}
+
+
+.box {
+	background-color: black;
+	width: 250px; 
+	height: 75px;
+	border: 2px solid white;float: left;
+	margin: 20px 5px 30px 50px;
+}
+
+h1{ 
+	left: 35px;
+	
+	font-size: 30px;
+	color: white;
+	position: relative;
+}
+a {color:white;}
+
+
+
+
+
+
+
+#line {
+	width: 100%;
+	height: 3px;
+	background-color: white; clear: left;
+	margin-top: 30px}
+
+p {
+	color: black;
+	font-size: 20px;
+
+}
+
+.story {
+	background-color: white;
+	color: black; 
+	width: 500px;
+	height: 200px;
+	display: block;
+	padding: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 30%
+
+}
+
+
+#white {
+	color: black;
+	font-size: 20px;
+}
+
+
+
+/*links*/
+a:visited {color: white}
+a {text-decoration: none; }
+a:hover {color:gray;}
+
+.box:hover{background-color: gray; color:gray; }
+
+
+
+/*3*/
+span {
+	display: block;
+	background-color: white;
+	color: black;
+	border-radius: 25px;
+	padding: 30px
+}
+.star {text}
+h2 {color: black; font-family: Vollkorn; font-size: 25px; padding: 30px; }
+.textbox {background-color: #c3c3c3; border-radius: 25px; margin-top: -30px; margin-left: 35px; margin-right: 35px}
+.padding {
+	padding: 30px;
+}
+h3 { font-size: 18px;}
+.boxs {
+	color: white;
+	font-size: 10px;
+	padding: 5px;
+}
+ul{ margin-left: 10px}
+ul {list-style-type: none;
+	-moz-column-count: 12;
+    -moz-column-gap: 1px;
+    -webkit-column-count: 12;
+    -webkit-column-gap: 1px;
+    column-count: 12;
+    column-gap: 1px;}
+$(function() {
+
+    var newHash      = "",
+        $mainContent = $("#main-content"),
+        $pageWrap    = $("#page-wrap"),
+        baseHeight   = 0,
+        $el;
+        
+    $pageWrap.height($pageWrap.height());
+    baseHeight = $pageWrap.height() - $mainContent.height();
+    
+    $("nav").delegate("a", "click", function() {
+        window.location.hash = $(this).attr("href");
+        return false;
+    });
+    
+    $(window).bind('hashchange', function(){
+    
+        newHash = window.location.hash.substring(1);
+        
+        if (newHash) {
+            $mainContent
+                .find("#guts")
+                .fadeOut(200, function() {
+                    $mainContent.hide().load(newHash + " #guts", function() {
+                        $mainContent.fadeIn(200, function() {
+                            $pageWrap.animate({
+                                height: baseHeight + $mainContent.height() + "px"
+                            });
+                        });
+                        $("nav a").removeClass("current");
+                        $("nav a[href='"+newHash+"']").addClass("current");
+                    });
+                });
+        };
+        
+    });
+    
+    $(window).trigger('hashchange');
+
+});
+   
+
